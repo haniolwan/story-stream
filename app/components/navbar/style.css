@@ -1,0 +1,13 @@
+.menu {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 200ms ease-out;
+
+  > div {
+    overflow: hidden;
+  }
+}
+
+.showMenu {
+  grid-template-rows: 1fr;
+}
