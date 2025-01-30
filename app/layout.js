@@ -2,6 +2,8 @@ import localFont from "next/font/local";
 import { ThemeProvider, useDarkTheme } from "./context/DarkTheme";
 import "./globals.css";
 import Container from "./components/container";
+import Script from "next/script";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,14 +25,8 @@ export default function RootLayout({ children }) {
   return (
     <ThemeProvider>
       <html lang="en">
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-          precedence="default"
-          rel="stylesheet"
-        />
-
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-gray-800`}
         >
           <Container>{children}</Container>
         </body>

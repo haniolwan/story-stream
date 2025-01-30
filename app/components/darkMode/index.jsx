@@ -6,7 +6,6 @@ const DarkMode = () => {
   const { isDark, setIsDark } = useDarkTheme();
   return (
     <button
-      className=""
       onClick={() => {
         setIsDark(!isDark);
       }}

@@ -10,8 +10,8 @@ const Navbar = () => {
   const menuItems = ["Pricing", "About", "Blog"];
 
   return (
-    <div className="relative dark:bg-gray-600 bg-gray-100 font-sans w-full m-0">
-      <div className="md:px-40 bg-white shadow">
+    <div className="relative font-sans w-full m-0">
+      <div className="md:px-40 dark:bg-gray-900 bg-white shadow">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             <div>
@@ -33,7 +33,7 @@ const Navbar = () => {
                 <a
                   key={item}
                   href="#"
-                  className="text-gray-800 text-md font-semibold hover:text-purple-600"
+                  className="dark:text-white text-gray-800 text-md font-semibold hover:text-purple-600"
                 >
                   {item}
                 </a>
@@ -50,8 +50,10 @@ const Navbar = () => {
               </a>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <DarkMode />
+            <div className="sm:hidden flex items-center space-x-4">
+              <div>
+                <DarkMode />
+              </div>
               <div
                 onClick={() => setMenu(!menu)}
                 className="sm:hidden cursor-pointer"

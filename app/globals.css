@@ -5,19 +5,24 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --transition-duration: 400ms;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --tw-bg-opacity: 1;
   }
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
   font-family: "EB Garamond", "EB Garamond Placeholder", serif;
+}
+
+body * {
+  @apply transition-colors duration-200;
 }
 
 @layer utilities {

@@ -4,14 +4,16 @@ import { createContext, useState, useContext } from "react";
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  let defaultIsDark = false;
+  const savedTheme = window.localStorage.getItem("dark");
   if (
+    savedTheme === undefined &&
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
     // is default theme dark?
     defaultIsDark = true;
   }
+  let defaultIsDark = savedTheme === "true";
 
   const [isDark, setIsDark] = useState(defaultIsDark);
 
