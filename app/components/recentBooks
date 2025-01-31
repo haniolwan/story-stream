@@ -1,0 +1,38 @@
+import Image from "next/image";
+
+const popularAudiobooks = [
+  { id: 1, title: "To Kill a Mockingbird", author: "Harper Lee" },
+  { id: 2, title: "1984", author: "George Orwell" },
+  { id: 3, title: "Pride and Prejudice", author: "Jane Austen" },
+  { id: 4, title: "The Catcher in the Rye", author: "J.D. Salinger" },
+];
+
+export function AudiobookList() {
+  return (
+    <div className="bg-gray-100 py-16">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8">Popular Audiobooks</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {popularAudiobooks.map(book => (
+            <div
+              key={book.id}
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+            >
+              <Image
+                src={`/placeholder.svg?height=300&width=200`}
+                alt={`${book.title} cover`}
+                width={200}
+                height={300}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="font-bold mb-1">{book.title}</h3>
+                <p className="text-gray-600">{book.author}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
