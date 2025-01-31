@@ -18,7 +18,7 @@
 
 body {
   color: var(--foreground);
-  font-family: "EB Garamond", "EB Garamond Placeholder", serif;
+  font-family: "Inter", "Arial", sans-serif;
 }
 
 body * {
