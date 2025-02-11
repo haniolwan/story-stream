@@ -1,8 +1,8 @@
 const Hero = () => {
   return (
-    <section className="font-serif bg-gradient-to-r from-purple-700 to-indigo-800 text-white py-20">
+    <section className="font-serif bg-gradient-to-r from-purple-700 to-indigo-800 py-20">
       <div className="text-center container mx-auto px-4 flex flex-col md:px-40 items-center justify-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <h1 className="dark:text-neutral-200 text-4xl md:text-5xl font-bold mb-4">
           Turn Your eBooks into Audiobooks
         </h1>
         <p className="text-xl mb-6">
@@ -10,7 +10,7 @@ const Hero = () => {
         </p>
         <button
           type="button"
-          className="flex items-center space-x-2 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-6 mb-2 shadow-lg transition-transform transform hover:scale-105 duration-200 ease-in-out dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+          className="flex items-center space-x-2 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-0 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-6 mb-2 shadow-lg transition-transform transform hover:scale-105 duration-200 ease-in-out dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
         >
           <h2 className="font-serif text-[32px] font-normal">
             Start Listening

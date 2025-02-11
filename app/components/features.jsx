@@ -28,10 +28,7 @@ const Features = () => {
           <p className="w-fit rounded-lg dark:bg-white bg-purple-100 bg-opacity-50 p-1 mb-3 tracking-wider text-purple-600 text-[16px] font-bold text-center font-[400] leading-[1.2rem] font-inter">
             POWERFUL FEATURES
           </p>
-          <h2 className="text-[54px] leading-[64.8px] font-inter">
-            Audiobooks reimagined
-          </h2>
-          <p className="text-[35px] text-[#52525b] leading-[30px] font-inter">
+          <p className="text-[35px] dark:text-neutral-200 text-[#52525b] leading-[30px] font-inter">
             Features built to let you enjoy audiobooks to the fullest
           </p>
         </div>
@@ -41,13 +38,13 @@ const Features = () => {
               key={index}
               className="dark:bg-gray-900 bg-white p-6 rounded-lg shadow-xl text-center"
             >
-              <div className="mb-4 flex justify-center dark:text-white text-gray-800">
+              <div className="mb-4 flex justify-center dark:text-neutral-200 text-gray-800">
                 {feature.icon}
               </div>
-              <h3 className="dark:text-white text-gray-900 text-xl font-semibold mb-2">
+              <h3 className="dark:text-neutral-200 text-gray-900 text-xl font-semibold mb-2">
                 {feature.title}
               </h3>
-              <p className="dark:text-white text-gray-600 text-lg">
+              <p className="dark:text-neutral-200 text-gray-600 text-lg">
                 {feature.description}
               </p>
             </div>

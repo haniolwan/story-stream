@@ -7,7 +7,7 @@ import "./style.css";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
-  const menuItems = ["Pricing", "About", "Blog"];
+  const menuItems = ["Pricing", "About", "Blog", "Faq"];
 
   return (
     <div className="relative font-sans w-full m-0">
@@ -28,7 +28,7 @@ const Navbar = () => {
               </svg>
             </div>
 
-            <div className="hidden sm:flex sm:items-center gap-[20px]">
+            <div className="hidden sm:flex sm:items-center justify-center gap-12">
               {menuItems.map(item => (
                 <a
                   key={item}
@@ -43,10 +43,10 @@ const Navbar = () => {
             <div className="hidden sm:flex sm:items-center space-x-4">
               <DarkMode />
               <a
-                href="#"
-                className="text-md font-semibold border px-3 py-2 rounded-lg bg-purple-600 text-white"
+                href="/login"
+                className="text-md font-semibold text-zinc-900 hover:underline dark:text-white"
               >
-                Start Listening
+                Sign in
               </a>
             </div>
 
